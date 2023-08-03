@@ -11,21 +11,26 @@
     <form>
  Nome: <input type="text" placeholder="Seu nome de usuário" required>
 <br>
- Email <input type="email" placeholder="Seu Email" required>
+ Email: <input type="email" placeholder="Seu Email" required>
 <br>
-Idade: <input type="number" min="18" max="100" >
+Idade: <input type="number" min="18" max="100" required>
  <br>
- Senha <input type="password" placeholder="Digite sua senha">
+ Senha: <input type="password" placeholder="Digite sua senha" required>
  <br>
-<p>Selecione Sua cor favorita</p>
- <select name="cor">
-<option value="vermelho">vermelho</option>
-<option value="azul">azul</option>
+ Data de Aniversario:<input type="date" id="dataNascimento" name="dataNascimento" required>     
+ <br>
+<p>Pessoa Fisica ou Juridica?</p>
+ <select name="pessoa">
+<option value="CPF">Pessoa Fisica</option>
+<option value="CNPJ">Pessoa Juridica</option>
  </select>
  <br>
- Pessoa Fisica<input type="radio" name="cnpj" value="cpf" />
- Pessoa Juridira<input type="radio" name="cpf" value="cnpj" />
- <br>
+        <p>Você com os Termos?</p>
+ <      input type="radio" name="opcao" value="concordo"> Eu concordo
+        <br>
+        <input type="radio" name="opcao" value="nao_concordo"> Não Concordo
+        
+        <br><br>
  <input type="submit" value="enviar">
 
 
